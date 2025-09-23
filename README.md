@@ -18,9 +18,9 @@
 
 - Image：图片
 
-- LICENSE：许可证
+- doc:文档
 
-- CT137X_UM.pdf：四梯FPGA竞赛实训平台用户手册
+- LICENSE：许可证
 
 - 用户可以在 AMD/Xilinx 官网注册、下载开发环境，推荐下载18.3 及以上版本。
 
