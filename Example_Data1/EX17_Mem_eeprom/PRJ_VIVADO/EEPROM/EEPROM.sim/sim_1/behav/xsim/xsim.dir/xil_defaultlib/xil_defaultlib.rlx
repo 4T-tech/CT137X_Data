@@ -1,0 +1,8 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/EEPROM.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/Administrator/Desktop/EEPROM/RTL/M24LC64.v,1742805249,verilog,,C:/Users/Administrator/Desktop/EEPROM/RTL/iic_drive.v,,M24LC64,,,,,,,,
+C:/Users/Administrator/Desktop/EEPROM/RTL/iic_drive.v,1742809933,verilog,,C:/Users/Administrator/Desktop/EEPROM/RTL/tb_iic_drive.v,,iic_drive,,,,,,,,
+C:/Users/Administrator/Desktop/EEPROM/RTL/tb_iic_drive.v,1742810052,verilog,,,,tb_iic_drive,,,,,,,,

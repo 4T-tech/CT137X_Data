@@ -1,0 +1,144 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Mar 24 17:54:28 2025
+# Process ID: 10880
+# Current directory: C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10384 C:\Users\Administrator\Desktop\EEPROM\PRJ_VIVADO\EEPROM\EEPROM.xpr
+# Log file: C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/EEPROM.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 14
+[Mon Mar 24 17:55:32 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/EEPROM.runs/synth_1/runme.log
+set_property top tb_iic_drive [current_fileset]
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/EEPROM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_iic_drive' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/EEPROM.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_iic_drive_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/EEPROM/RTL/M24LC64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M24LC64
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/EEPROM/RTL/iic_drive.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module iic_drive
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/EEPROM/RTL/tb_iic_drive.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_iic_drive
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/EEPROM.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto de09d1664c9641ae8ea186f0ec2ff5d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_iic_drive_behav xil_defaultlib.tb_iic_drive xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.iic_drive(ADDR_BYTE_NUM=2,DATA_B...
+Compiling module xil_defaultlib.M24LC64
+Compiling module xil_defaultlib.tb_iic_drive
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_iic_drive_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/EEPROM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_iic_drive_behav -key {Behavioral:sim_1:Functional:tb_iic_drive} -tclbatch {tb_iic_drive.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_iic_drive.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_iic_drive_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/tb_iic_drive/u_iic_drive}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/EEPROM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_iic_drive' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/EEPROM.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_iic_drive_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/EEPROM/RTL/M24LC64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M24LC64
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/EEPROM/RTL/iic_drive.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module iic_drive
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/EEPROM/RTL/tb_iic_drive.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_iic_drive
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/EEPROM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/EEPROM.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto de09d1664c9641ae8ea186f0ec2ff5d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_iic_drive_behav xil_defaultlib.tb_iic_drive xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.iic_drive(ADDR_BYTE_NUM=2,DATA_B...
+Compiling module xil_defaultlib.M24LC64
+Compiling module xil_defaultlib.tb_iic_drive
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_iic_drive_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run all
+step
+Stopped at time : 351750 ns : File "C:/Users/Administrator/Desktop/EEPROM/RTL/tb_iic_drive.v" Line 21
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/EEPROM.runs/synth_1
+
+launch_runs impl_1 -jobs 14
+[Mon Mar 24 18:09:12 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/EEPROM.runs/synth_1/runme.log
+[Mon Mar 24 18:09:12 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/EEPROM.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/EEPROM.runs/synth_1
+
+set_property top top [current_fileset]
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 14
+[Mon Mar 24 18:12:11 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/EEPROM.runs/synth_1/runme.log
+[Mon Mar 24 18:12:11 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/EEPROM.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 24 20:53:36 2025...

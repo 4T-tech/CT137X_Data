@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/EEPROM/RTL/M24LC64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M24LC64
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/EEPROM/RTL/iic_drive.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module iic_drive
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/EEPROM/RTL/tb_iic_drive.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_iic_drive

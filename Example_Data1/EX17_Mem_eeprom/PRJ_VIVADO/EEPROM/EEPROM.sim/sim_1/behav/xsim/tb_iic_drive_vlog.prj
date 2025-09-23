@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../RTL/M24LC64.v" \
+"../../../../../../RTL/iic_drive.v" \
+"../../../../../../RTL/tb_iic_drive.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

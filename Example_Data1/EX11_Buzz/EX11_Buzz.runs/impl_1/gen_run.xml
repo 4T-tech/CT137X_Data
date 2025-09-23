@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7s6ftgb196-1" LaunchTime="1728710720">
+  <File Type="BITSTR-BMM" Name="buzz_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="buzz_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="buzz_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="buzz_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="buzz.tcl"/>
+  <File Type="OPT-TIMING" Name="buzz_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="buzz_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="buzz_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="buzz_reports.tcl"/>
+  <File Type="OPT-DRC" Name="buzz_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="buzz.hwdef"/>
+  <File Type="PWROPT-DCP" Name="buzz_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="buzz_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="buzz_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="buzz_placed.dcp"/>
+  <File Type="PLACE-IO" Name="buzz_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="buzz_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="buzz_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="buzz_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="buzz_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="buzz_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="buzz_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="buzz.bgn"/>
+  <File Type="PLACE-TIMING" Name="buzz_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="buzz_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="buzz.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="buzz_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="buzz_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="buzz_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="buzz.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="buzz_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="buzz_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="buzz_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="buzz_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="buzz_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="buzz_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="buzz.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="buzz_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="buzz.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="buzz_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="buzz_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="buzz.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="buzz_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="buzz_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="buzz_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="buzz_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="buzz_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="buzz_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="buzz_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="buzz_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="buzz_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="buzz_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="buzz_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="buzz_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="buzz_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="buzz_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="buzz_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="buzz_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="buzz_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="buzz_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="buzz_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="buzz.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="buzz_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="buzz.rbt"/>
+  <File Type="BITSTR-NKY" Name="buzz.nky"/>
+  <File Type="BG-DRC" Name="buzz.drc"/>
+  <File Type="RDI-RDI" Name="buzz.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/buzz.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="buzz"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/sm.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,60 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Mar 24 17:05:22 2025
+# Process ID: 11044
+# Current directory: C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14088 C:\Users\Administrator\Desktop\EEPROM\PRJ_VIVADO\EEPROM\EEPROM.xpr
+# Log file: C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/EEPROM.xpr
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+place_ports {key_in[3]} N4
+place_ports {key_in[2]} P5
+place_ports {key_in[1]} M4
+place_ports {key_in[0]} M5
+set_property IOSTANDARD LVCMOS33 [get_ports [list {key_in[3]} {key_in[2]} {key_in[1]} {key_in[0]}]]
+place_ports iic_scl E11
+place_ports iic_sda M10
+place_ports sys_clk G11
+place_ports sys_rst B6
+set_property IOSTANDARD LVCMOS33 [get_ports [list iic_scl]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list iic_sda]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list sys_clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list sys_rst]]
+file mkdir C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/EEPROM.srcs/constrs_1/new
+close [ open C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/EEPROM.srcs/constrs_1/new/eeprom.xdc w ]
+add_files -fileset constrs_1 C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/EEPROM.srcs/constrs_1/new/eeprom.xdc
+set_property target_constrs_file C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/EEPROM.srcs/constrs_1/new/eeprom.xdc [current_fileset -constrset]
+save_constraints -force
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sel[7]} {sel[6]} {sel[5]} {sel[4]} {sel[3]} {sel[2]} {sel[1]} {sel[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {key_in[3]} {key_in[2]} {key_in[1]} {key_in[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {seg[7]} {seg[6]} {seg[5]} {seg[4]} {seg[3]} {seg[2]} {seg[1]} {seg[0]}]]
+save_constraints
+place_ports {sel[7]} F2
+place_ports {sel[6]} F3
+place_ports {sel[5]} D4
+place_ports {sel[4]} C4
+place_ports {sel[4]} E4
+place_ports {sel[3]} C4
+place_ports {sel[2]} C5
+place_ports {sel[1]} B1
+place_ports {sel[0]} B2
+place_ports {seg[7]} A5
+place_ports {seg[6]} B5
+place_ports {seg[5]} A2
+place_ports {seg[4]} B3
+place_ports {seg[3]} A3
+place_ports {seg[2]} A4
+place_ports {seg[1]} C3
+place_ports {seg[0]} D3
+save_constraints
+reset_run synth_1
+launch_runs impl_1 -jobs 14
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 14
+wait_on_run impl_1

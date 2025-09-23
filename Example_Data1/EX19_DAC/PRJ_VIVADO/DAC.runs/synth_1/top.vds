@@ -1,0 +1,487 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Mar 25 18:37:46 2025
+# Process ID: 9736
+# Current directory: C:/Users/Administrator/Desktop/DAC/PRJ_VIVADO/DAC.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/Administrator/Desktop/DAC/PRJ_VIVADO/DAC.runs/synth_1/top.vds
+# Journal file: C:/Users/Administrator/Desktop/DAC/PRJ_VIVADO/DAC.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7s6ftgb196-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s6'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s6'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1056 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.973 . Memory (MB): peak = 362.211 ; gain = 86.805
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/Administrator/Desktop/DAC/RTL/top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dac' [C:/Users/Administrator/Desktop/DAC/RTL/dac.v:1]
+	Parameter SYS_CLK bound to: 28'b0010111110101111000010000000 
+	Parameter DAC_SCL bound to: 28'b0000000000011000011010100000 
+	Parameter DEVICE_ADDR bound to: 7'b1001100 
+INFO: [Synth 8-6157] synthesizing module 'iic_drive' [C:/Users/Administrator/Desktop/DAC/RTL/iic_drive.v:23]
+	Parameter SYS_CLK bound to: 28'b0010111110101111000010000000 
+	Parameter IIC_SCL bound to: 28'b0000000000011000011010100000 
+	Parameter DEVICE_ADDR bound to: 7'b1001100 
+	Parameter ADDR_BYTE_NUM bound to: 8'b00000000 
+	Parameter DATA_BYTE_NUM bound to: 8'b00000010 
+	Parameter IDLE bound to: 7'b0000001 
+	Parameter START_DEVICE_ADDR bound to: 7'b0000010 
+	Parameter W_WORD_ADDR bound to: 7'b0000100 
+	Parameter W_DATA bound to: 7'b0001000 
+	Parameter R_START_DEVICE_ADDR bound to: 7'b0010000 
+	Parameter R_DATA bound to: 7'b0100000 
+	Parameter STOP bound to: 7'b1000000 
+	Parameter SCL_CNT_MAX bound to: 28'b0000000000000000000111110011 
+INFO: [Synth 8-6155] done synthesizing module 'iic_drive' (1#1) [C:/Users/Administrator/Desktop/DAC/RTL/iic_drive.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dac' (2#1) [C:/Users/Administrator/Desktop/DAC/RTL/dac.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top' (3#1) [C:/Users/Administrator/Desktop/DAC/RTL/top.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 418.785 ; gain = 143.379
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 418.785 ; gain = 143.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 418.785 ; gain = 143.379
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7s6ftgb196-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sel[7]'. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sel[6]'. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sel[5]'. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sel[4]'. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sel[3]'. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sel[2]'. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sel[1]'. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sel[0]'. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[7]'. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sel[7]'. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sel[6]'. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sel[5]'. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sel[4]'. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sel[3]'. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sel[2]'. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sel[1]'. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sel[0]'. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[7]'. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 714.113 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 714.113 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 714.113 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 714.113 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 714.113 ; gain = 438.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s6ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 714.113 ; gain = 438.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 714.113 ; gain = 438.707
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "iic_ready" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "iic_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bit_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "byte_cnt_num" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "dac_data" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 714.113 ; gain = 438.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 3     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 17    
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module iic_drive 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 3     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 3     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 17    
+	   4 Input      1 Bit        Muxes := 2     
+Module dac 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 10 (col length:20)
+BRAMs: 10 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "dac_inst/iic_drive_inst/byte_cnt_num" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dac_inst/iic_drive_inst/iic_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'dac_inst/iic_drive_inst/iic_rw_flag_reg_reg' (FDCE) to 'dac_inst/iic_drive_inst/word_addr_reg_reg[-1]'
+INFO: [Synth 8-3886] merging instance 'dac_inst/iic_drive_inst/byte_cnt_num_reg[6]' (FDCE) to 'dac_inst/iic_drive_inst/byte_cnt_num_reg[0]'
+INFO: [Synth 8-3886] merging instance 'dac_inst/iic_drive_inst/byte_cnt_num_reg[7]' (FDCE) to 'dac_inst/iic_drive_inst/byte_cnt_num_reg[0]'
+INFO: [Synth 8-3886] merging instance 'dac_inst/iic_drive_inst/byte_cnt_num_reg[0]' (FDCE) to 'dac_inst/iic_drive_inst/byte_cnt_num_reg[2]'
+INFO: [Synth 8-3886] merging instance 'dac_inst/iic_drive_inst/byte_cnt_num_reg[2]' (FDCE) to 'dac_inst/iic_drive_inst/byte_cnt_num_reg[3]'
+INFO: [Synth 8-3886] merging instance 'dac_inst/iic_drive_inst/byte_cnt_num_reg[3]' (FDCE) to 'dac_inst/iic_drive_inst/byte_cnt_num_reg[4]'
+INFO: [Synth 8-3886] merging instance 'dac_inst/iic_drive_inst/byte_cnt_num_reg[4]' (FDCE) to 'dac_inst/iic_drive_inst/byte_cnt_num_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dac_inst/iic_drive_inst/byte_cnt_num_reg[5] )
+INFO: [Synth 8-3886] merging instance 'dac_inst/iic_drive_inst/word_addr_reg_reg[-1]' (FDCE) to 'dac_inst/iic_drive_inst/word_addr_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'dac_inst/iic_drive_inst/word_addr_reg_reg[0]' (FDCE) to 'dac_inst/iic_drive_inst/wdata_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'dac_inst/iic_drive_inst/wdata_reg_reg[15]' (FDCE) to 'dac_inst/iic_drive_inst/wdata_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'dac_inst/iic_drive_inst/wdata_reg_reg[14]' (FDCE) to 'dac_inst/iic_drive_inst/wdata_reg_reg[13]'
+INFO: [Synth 8-3886] merging instance 'dac_inst/iic_drive_inst/wdata_reg_reg[13]' (FDCE) to 'dac_inst/iic_drive_inst/wdata_reg_reg[12]'
+INFO: [Synth 8-3886] merging instance 'dac_inst/iic_drive_inst/wdata_reg_reg[12]' (FDCE) to 'dac_inst/iic_drive_inst/wdata_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'dac_inst/iic_drive_inst/wdata_reg_reg[3]' (FDCE) to 'dac_inst/iic_drive_inst/wdata_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'dac_inst/iic_drive_inst/wdata_reg_reg[2]' (FDCE) to 'dac_inst/iic_drive_inst/wdata_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'dac_inst/iic_drive_inst/wdata_reg_reg[1]' (FDCE) to 'dac_inst/iic_drive_inst/wdata_reg_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dac_inst/iic_drive_inst/wdata_reg_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dac_inst/iic_drive_inst/bit_cnt_num_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\dac_inst/iic_drive_inst/bit_cnt_num_reg[3] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 714.113 ; gain = 438.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 714.113 ; gain = 438.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 714.113 ; gain = 438.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 731.258 ; gain = 455.852
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 731.258 ; gain = 455.852
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 731.258 ; gain = 455.852
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 731.258 ; gain = 455.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 731.258 ; gain = 455.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 731.258 ; gain = 455.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 731.258 ; gain = 455.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    11|
+|3     |LUT1   |     2|
+|4     |LUT3   |     5|
+|5     |LUT4   |    24|
+|6     |LUT5   |    57|
+|7     |LUT6   |    30|
+|8     |FDCE   |    77|
+|9     |FDPE   |     6|
+|10    |IBUF   |     2|
+|11    |OBUF   |     1|
+|12    |OBUFT  |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------+----------+------+
+|      |Instance           |Module    |Cells |
++------+-------------------+----------+------+
+|1     |top                |          |   217|
+|2     |  dac_inst         |dac       |   212|
+|3     |    iic_drive_inst |iic_drive |   123|
++------+-------------------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 731.258 ; gain = 455.852
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 731.258 ; gain = 160.523
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 731.258 ; gain = 455.852
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 731.258 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+45 Infos, 32 Warnings, 32 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 731.258 ; gain = 455.852
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 731.258 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Administrator/Desktop/DAC/PRJ_VIVADO/DAC.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 25 18:37:58 2025...

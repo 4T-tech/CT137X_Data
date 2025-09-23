@@ -1,0 +1,91 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Mar 24 17:05:22 2025
+# Process ID: 11044
+# Current directory: C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14088 C:\Users\Administrator\Desktop\EEPROM\PRJ_VIVADO\EEPROM\EEPROM.xpr
+# Log file: C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/EEPROM.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7s6ftgb196-1
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7s6ftgb196-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 999.172 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+place_ports {key_in[3]} N4
+place_ports {key_in[2]} P5
+place_ports {key_in[1]} M4
+place_ports {key_in[0]} M5
+set_property IOSTANDARD LVCMOS33 [get_ports [list {key_in[3]} {key_in[2]} {key_in[1]} {key_in[0]}]]
+place_ports iic_scl E11
+place_ports iic_sda M10
+place_ports sys_clk G11
+place_ports sys_rst B6
+set_property IOSTANDARD LVCMOS33 [get_ports [list iic_scl]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list iic_sda]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list sys_clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list sys_rst]]
+file mkdir C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/EEPROM.srcs/constrs_1/new
+close [ open C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/EEPROM.srcs/constrs_1/new/eeprom.xdc w ]
+add_files -fileset constrs_1 C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/EEPROM.srcs/constrs_1/new/eeprom.xdc
+set_property target_constrs_file C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/EEPROM.srcs/constrs_1/new/eeprom.xdc [current_fileset -constrset]
+save_constraints -force
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1519.371 ; gain = 0.000
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sel[7]} {sel[6]} {sel[5]} {sel[4]} {sel[3]} {sel[2]} {sel[1]} {sel[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {key_in[3]} {key_in[2]} {key_in[1]} {key_in[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {seg[7]} {seg[6]} {seg[5]} {seg[4]} {seg[3]} {seg[2]} {seg[1]} {seg[0]}]]
+save_constraints
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1554.602 ; gain = 0.000
+place_ports {sel[7]} F2
+place_ports {sel[6]} F3
+place_ports {sel[5]} D4
+place_ports {sel[4]} C4
+place_ports {sel[4]} E4
+place_ports {sel[3]} C4
+place_ports {sel[2]} C5
+place_ports {sel[1]} B1
+place_ports {sel[0]} B2
+place_ports {seg[7]} A5
+place_ports {seg[6]} B5
+place_ports {seg[5]} A2
+place_ports {seg[4]} B3
+place_ports {seg[3]} A3
+place_ports {seg[2]} A4
+place_ports {seg[1]} C3
+place_ports {seg[0]} D3
+save_constraints
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1554.602 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/EEPROM.runs/synth_1
+
+launch_runs impl_1 -jobs 14
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Mon Mar 24 17:22:25 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/EEPROM.runs/synth_1/runme.log
+[Mon Mar 24 17:22:25 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/EEPROM.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 14
+[Mon Mar 24 17:24:28 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/EEPROM/PRJ_VIVADO/EEPROM/EEPROM.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 24 17:29:21 2025...
