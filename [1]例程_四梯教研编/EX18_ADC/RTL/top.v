@@ -29,7 +29,7 @@ adc_inst(
 //数码管显示模块
 seg seg_inst(
     .seg_clk                          (sys_clk               ),
-    .seg_rst                          (seg_rst               ),
+    .seg_rst                          (sys_rst               ),
     .dsp_data                         (dsp_data              ),
     .seg                              (seg                   ),
     .sel                              (sel                   ) 
