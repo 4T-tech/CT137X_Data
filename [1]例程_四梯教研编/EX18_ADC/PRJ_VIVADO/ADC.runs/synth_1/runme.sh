@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Administrator/Desktop/ADC/PRJ_VIVADO/ADC.runs/synth_1'
+HD_PWD='C:/Users/4T/Desktop/EX18_ADC/PRJ_VIVADO/ADC.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

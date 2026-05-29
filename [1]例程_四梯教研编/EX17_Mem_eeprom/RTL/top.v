@@ -88,11 +88,11 @@ key key_inst(
 );
 
 iic_drive#(
-    .SYS_CLK      (28'd50_000_000 ),
-    .IIC_SCL      (28'd100_000    ),
-    .DEVICE_ADDR  (7 'b1010_000   ),
-    .ADDR_BYTE_NUM(ADDR_BYTE_NUM),
-    .DATA_BYTE_NUM(DATA_BYTE_NUM)
+    .P_SYS_CLK      (28'd50_000_000 ),
+    .P_IIC_SCL      (28'd100_000    ),
+    .P_DEVICE_ADDR  (7 'b1010_000   ),
+    .P_ADDR_BYTE_NUM(ADDR_BYTE_NUM),
+    .P_DATA_BYTE_NUM(DATA_BYTE_NUM)
 )
 iic_drive_inst(
     .iic_clk                              (sys_clk                 ),

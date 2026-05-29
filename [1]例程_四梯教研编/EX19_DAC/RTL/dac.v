@@ -42,11 +42,11 @@ always@(posedge dac_clk or posedge dac_rst)begin
 end
 
 iic_drive#(
-    .SYS_CLK                         (SYS_CLK                     ),
-    .IIC_SCL                         (DAC_SCL                     ),
-    .DEVICE_ADDR                     (DEVICE_ADDR                 ),
-    .ADDR_BYTE_NUM                   (8'd0                        ), //这个DAC的IIC传输过程中不需要传输数据地址 
-    .DATA_BYTE_NUM                   (8'd2                        )  
+    .P_SYS_CLK                         (SYS_CLK                     ),
+    .P_IIC_SCL                         (DAC_SCL                     ),
+    .P_DEVICE_ADDR                     (DEVICE_ADDR                 ),
+    .P_ADDR_BYTE_NUM                   (8'd0                        ), //这个DAC的IIC传输过程中不需要传输数据地址 
+    .P_DATA_BYTE_NUM                   (8'd2                        )  
 )
 iic_drive_inst(
     .iic_clk                         (dac_clk                     ),

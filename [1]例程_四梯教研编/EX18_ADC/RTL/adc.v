@@ -63,11 +63,11 @@ end
 
 
 iic_drive#(
-    .SYS_CLK                          (SYS_CLK                 ),
-    .IIC_SCL                          (ADC_SCL                 ),
-    .DEVICE_ADDR                      (DEVICE_ADDR             ),
-    .ADDR_BYTE_NUM                    (8'd2                    ),
-    .DATA_BYTE_NUM                    (8'd2                    )  
+    .P_SYS_CLK                          (SYS_CLK                 ),
+    .P_IIC_SCL                          (ADC_SCL                 ),
+    .P_DEVICE_ADDR                      (DEVICE_ADDR             ),
+    .P_ADDR_BYTE_NUM                    (8'd2                    ),
+    .P_DATA_BYTE_NUM                    (8'd2                    )  
 )
 iic_drive_inst(
     .iic_clk                          (adc_clk                 ),

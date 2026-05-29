@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/Administrator/Desktop/DAC/RTL/dac.xdc rfile:../../../../RTL/dac.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/4T/Desktop/EX19_DAC/RTL/dac.xdc rfile:../../../../RTL/dac.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN E11 [get_ports iic_scl]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]

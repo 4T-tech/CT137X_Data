@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Administrator/Desktop/DAC/PRJ_VIVADO/DAC.runs/impl_1'
+HD_PWD='C:/Users/4T/Desktop/EX19_DAC/PRJ_VIVADO/DAC.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -17,23 +17,22 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7s6ftgb196-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/Administrator/Desktop/ADC/PRJ_VIVADO/ADC.cache/wt [current_project]
-set_property parent.project_path C:/Users/Administrator/Desktop/ADC/PRJ_VIVADO/ADC.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/4T/Desktop/EX18_ADC/PRJ_VIVADO/ADC.cache/wt [current_project]
+set_property parent.project_path C:/Users/4T/Desktop/EX18_ADC/PRJ_VIVADO/ADC.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/Administrator/Desktop/ADC/PRJ_VIVADO/ADC.cache/ip [current_project]
+set_property ip_output_repo c:/Users/4T/Desktop/EX18_ADC/PRJ_VIVADO/ADC.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  C:/Users/Administrator/Desktop/ADC/RTL/adc.v
-  C:/Users/Administrator/Desktop/ADC/RTL/iic_drive.v
-  C:/Users/Administrator/Desktop/ADC/RTL/seg.v
-  C:/Users/Administrator/Desktop/ADC/RTL/top.v
+  C:/Users/4T/Desktop/EX18_ADC/RTL/adc.v
+  C:/Users/4T/Desktop/EX18_ADC/RTL/iic_drive.v
+  C:/Users/4T/Desktop/EX18_ADC/RTL/seg.v
+  C:/Users/4T/Desktop/EX18_ADC/RTL/top.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -43,8 +42,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Administrator/Desktop/ADC/PRJ_VIVADO/ADC.srcs/constrs_1/new/adc.xdc
-set_property used_in_implementation false [get_files C:/Users/Administrator/Desktop/ADC/PRJ_VIVADO/ADC.srcs/constrs_1/new/adc.xdc]
+read_xdc C:/Users/4T/Desktop/EX18_ADC/PRJ_VIVADO/ADC.srcs/constrs_1/new/adc.xdc
+set_property used_in_implementation false [get_files C:/Users/4T/Desktop/EX18_ADC/PRJ_VIVADO/ADC.srcs/constrs_1/new/adc.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
